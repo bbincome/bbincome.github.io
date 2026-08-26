@@ -1,0 +1,333 @@
+<title>Beast Weeper Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F6F8;
+    --surface: #FFFFFF;
+    --border: #DDE1E7;
+    --text: #1C232E;
+    --text-dim: #566072;
+    --text-faint: #8992A3;
+    --accent: #3454D1;
+    --accent-soft: #EAEEFC;
+    --font-body: "IBM Plex Sans", "Noto Sans TC", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", "Cascadia Code", monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171C;
+      --surface: #1C2027;
+      --border: #2E333C;
+      --text: #E7E9ED;
+      --text-dim: #A3AAB6;
+      --text-faint: #6C7484;
+      --accent: #7C93F0;
+      --accent-soft: #232A42;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #14171C;
+    --surface: #1C2027;
+    --border: #2E333C;
+    --text: #E7E9ED;
+    --text-dim: #A3AAB6;
+    --text-faint: #6C7484;
+    --accent: #7C93F0;
+    --accent-soft: #232A42;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 46em;
+    margin: 0 auto;
+    padding: 56px 24px 88px;
+  }
+
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+
+  .mark {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .masthead-text .app-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+  }
+
+  .masthead-text .app-sub {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-faint);
+    letter-spacing: 0.02em;
+  }
+
+  h1 {
+    font-size: clamp(26px, 4vw, 32px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--text-faint);
+    margin-bottom: 40px;
+  }
+
+  section {
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: var(--text);
+  }
+
+  p {
+    margin: 0 0 12px;
+    color: var(--text-dim);
+    max-width: 38em;
+  }
+
+  ul {
+    margin: 0 0 12px;
+    padding-left: 22px;
+    color: var(--text-dim);
+  }
+
+  li { margin-bottom: 8px; }
+
+  a { color: var(--accent); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 0 0 12px;
+  }
+
+  .card dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 16px;
+    margin: 0;
+  }
+
+  .card dt {
+    font-size: 13px;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+
+  .card dd {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 44px 0;
+  }
+
+  .lang-divider {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    margin-bottom: 24px;
+  }
+
+  .contact {
+    font-family: var(--font-mono);
+    font-size: 14px;
+  }
+
+  footer {
+    margin-top: 48px;
+    font-size: 12.5px;
+    color: var(--text-faint);
+  }
+</style>
+
+<div class="page">
+  <div class="masthead">
+    <div class="mark">🛡</div>
+    <div class="masthead-text">
+      <div class="app-name">掃怪錄 Beast Weeper</div>
+      <div class="app-sub">com.bbincome.beastweeper</div>
+    </div>
+  </div>
+
+  <h1>隱私權政策</h1>
+  <div class="meta">生效日期:2026-08-26</div>
+
+  <section>
+    <p>
+      本頁說明《掃怪錄 Beast Weeper》(以下稱「本應用程式」)如何處理使用者資料。
+      本應用程式沒有帳號系統、不需要註冊登入,開發者本身不會收集、儲存或
+      對外傳輸任何可識別使用者身份的個人資料。
+    </p>
+  </section>
+
+  <section>
+    <h2>本機儲存的設定</h2>
+    <p>
+      語言、難度、音效與背景音樂開關等偏好設定,只會儲存在使用者自己的
+      裝置上(使用 Android 系統的本機儲存機制),不會上傳到任何伺服器,
+      解除安裝本應用程式即會一併清除。
+    </p>
+  </section>
+
+  <section>
+    <h2>第三方服務:廣告</h2>
+    <p>
+      本應用程式使用 Google AdMob(Google Mobile Ads SDK)顯示橫幅廣告,
+      藉此支持後續的開發與維護。為了投放與衡量廣告效果,Google 及其廣告
+      合作夥伴可能會收集裝置廣告識別碼、概略地理位置、應用程式使用情況
+      等資訊,實際收集與使用方式請參閱:
+    </p>
+    <div class="card">
+      <dl>
+        <dt>服務提供者</dt>
+        <dd>Google LLC</dd>
+        <dt>隱私權政策</dt>
+        <dd><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></dd>
+        <dt>廣告個人化設定</dt>
+        <dd><a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a></dd>
+      </dl>
+    </div>
+    <p>
+      使用者可以在裝置的系統設定中重設廣告識別碼,或關閉個人化廣告。
+    </p>
+  </section>
+
+  <section>
+    <h2>兒童隱私</h2>
+    <p>
+      本應用程式並非專門針對兒童設計,也不會刻意向兒童收集個人資料。
+      若您認為兒童在未經監護人同意的情況下提供了資料給我們,請透過下方
+      聯絡方式告知,我們會盡快處理。
+    </p>
+  </section>
+
+  <section>
+    <h2>資料保留與安全</h2>
+    <p>
+      因為開發者不在自己的伺服器上收集或儲存使用者個人資料,所以沒有
+      額外的資料保留期限問題;裝置上的本機設定完全由使用者自行掌控。
+    </p>
+  </section>
+
+  <section>
+    <h2>政策的變更</h2>
+    <p>
+      若本應用程式未來新增會收集使用者資料的功能(例如雲端存檔、帳號
+      系統),我們會在此頁面更新對應的說明與生效日期。
+    </p>
+  </section>
+
+  <section>
+    <h2>聯絡我們</h2>
+    <p>對本政策有任何疑問,歡迎透過以下方式聯絡:</p>
+    <div class="contact">[請填入聯絡信箱]</div>
+  </section>
+
+  <hr>
+
+  <div class="lang-divider">English</div>
+
+  <section>
+    <h2>Privacy Policy</h2>
+    <p>
+      Beast Weeper (com.bbincome.beastweeper) has no account system and does
+      not require sign-in. The developer does not collect, store, or transmit
+      any personally identifiable information.
+    </p>
+  </section>
+
+  <section>
+    <h2>Local settings</h2>
+    <p>
+      Preferences such as language, difficulty, and sound settings are stored
+      only on your device and are never uploaded to any server. Uninstalling
+      the app removes them.
+    </p>
+  </section>
+
+  <section>
+    <h2>Third-party service: advertising</h2>
+    <p>
+      This app uses Google AdMob (Google Mobile Ads SDK) to display banner
+      ads. Google and its advertising partners may collect device
+      advertising identifiers, approximate location, and app usage data to
+      serve and measure ads. See
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+      and manage ad personalization at
+      <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.
+      You can reset your advertising ID or opt out of personalized ads in
+      your device settings.
+    </p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>
+      This app is not directed at children and does not knowingly collect
+      data from children. If you believe a child has provided us data
+      without parental consent, please contact us below.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>
+      If future versions of the app add features that collect user data
+      (e.g. cloud saves, accounts), this page will be updated accordingly.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">[insert contact email]</div>
+  </section>
+
+  <footer>掃怪錄 Beast Weeper · bbincome</footer>
+</div>
